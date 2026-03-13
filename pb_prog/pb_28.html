@@ -1,0 +1,23 @@
+<!-- WRITE ONR JASON STRING WITH DATE PROPERTY AND IST FROM ON CLICK BUTTON -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<SCript>
+    function call(){
+        let obj=JSON.parse('{"name":"fenil","dob":"2006-12-20"}')
+        let d=new Date(obj.dob)
+        document.getElementById("demo").innerHTML=d
+    }
+</SCript>
+
+<body>
+    <p id="demo"></p>
+    <button type="button" onclick="call()">click</button>
+</body>
+
+</html>
